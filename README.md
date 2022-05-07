@@ -31,7 +31,7 @@
   Made by [TOVTC](https://github.com/TOVTC).
   
   ## Tests<a name="tests"></a>
-    All input values are tested upon submission.
+  All input values are tested upon submission.
   
   ## Questions?<a name="questions"></a>
   Contact repository author via [GitHub](https://github.com/TOVTC).</br>
