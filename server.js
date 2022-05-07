@@ -3,10 +3,13 @@ const db = require("./db/connection");
 const apiRoutes = require("./routes/apiRoutes");
 const PORT = process.env.PORT || 3001;
 const app = express();
-app.use("/api", apiRoutes);
+
 // Express middleware
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+
+// Add after express middleware
+app.use("/api", apiRoutes);
 
 //Default response for any other request (Not Found)
 app.use((req,res) => {
