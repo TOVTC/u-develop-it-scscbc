@@ -12,7 +12,7 @@ router.get("/candidates", (req, res) => {
                 ON candidates.party_id = parties.id`;
     db.query(sql, (err, rows) => {
         if (err) {
-            res.status(500).json({error: err.mssage});
+            res.status(500).json({error: err.message});
             return;
         }
         res.json({
